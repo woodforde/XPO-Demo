@@ -1,0 +1,119 @@
+#workPage {
+    overflow-x: hidden;
+    background-color: #22577a;
+}
+
+/* Nav Bar */
+nav {
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+}
+
+.navLogo__container {
+    height: 100%;
+}
+.navLogo__container > img {
+    height: 100%;
+    transition: filter 300ms ease;
+}
+.navLogo__container:hover > img {
+    filter: invert();
+}
+
+.navLinks {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.navLink {
+    color: whitesmoke;
+    margin: 0 20px;
+    font-size: 28px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* Header / Landing Page */
+header {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1460px;
+    margin: 0 auto;
+}
+
+.headerTitle {
+    color: whitesmoke;
+    text-align: left;
+    font-size: 80px;
+    max-width: 600px;
+}
+.headerParagraph {
+    max-width: 640px;
+    text-align: left;
+    color: whitesmoke;
+    font-size: 18px;
+}
+
+/* video banner */
+#videobanner {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoBanner__container {
+    position: relative;
+    max-width: 1460px;
+    margin: 0 auto;
+    border-radius: 5rem;
+    overflow: hidden;
+    border-radius: 5px solid;
+    cursor: pointer;
+    box-shadow: 0px 0px 24px 0px rgba(0,0,0,0.5);
+}
+.videoBanner__container:hover > .videoBanner__overlay,
+.videoBanner__container:hover > .videoBanner__icon {
+    display: block;
+    opacity: 1;
+}
+.videoBanner__container:hover > .videoBanner__img {
+    transform: scale(1.05);
+}
+
+.videoBanner__img {
+    width: 100%;
+    transition: transform 300ms ease;
+}
+
+.videoBanner__overlay {
+    position: absolute;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.26);
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: opacity 300ms ease;
+}
+.videoBanner__icon {
+    position: absolute;
+    color: white;
+    opacity: 0;
+    font-size: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    transition: opacity 300ms ease;
+}
+
+

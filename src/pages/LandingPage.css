@@ -1,0 +1,131 @@
+.landingPage {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #22577A;
+    position: relative;
+}
+
+.menuButton {
+    width: 100px;
+    height: 100px;
+    background-color: #57CC99;
+    border-radius: 5rem;
+    box-shadow: 0px 0px 25px 20px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 300ms ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menuButton:hover {
+    transform: scale(1.08);
+}
+.menuButton:active {
+    transform: scale(0.95);
+}
+
+.menuButton--open {
+    height: 50px;
+    width: 50px;
+    background-color: #38A3A5;
+    transition: all 300ms ease;
+}
+
+.menuButton--cross-hidden {
+    color: white;
+    opacity: 0;
+    transition: all 300ms ease;
+}
+.menuButton--cross {
+    color: white;
+    opacity: 1;
+    transition: all 300ms 100ms ease;
+
+}
+
+@keyframes breathe {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.05);
+    }
+}
+
+h1 {
+    color: whitesmoke;
+}
+
+#landingMenu {
+    position: relative;
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menuText {
+    position: absolute;
+    text-align: center;
+    width: max-content;
+    font-size: 5px;
+    cursor: pointer;
+    transition: all 500ms ease-in-out, color 300ms ease;
+}
+.menuText:hover {
+    color: #C7F9CC;
+}
+
+.menuText:nth-child(2) {
+    transform: rotate(90deg);
+}
+.menuText:nth-child(3) {
+    transform: rotate(270deg);
+}
+
+.menuText--open {
+    font-size: 40px;
+    opacity: 1;
+}
+.menuText--open:nth-child(2) {
+    transform: translate(-100%, -200%) rotate(-15deg);
+    animation: sprout-left 500ms 1 ease-in-out;
+
+}
+.menuText--open:nth-child(3) {
+    transform: translate(100%, -200%) rotate(15deg);
+    animation: sprout-right 500ms 1 ease-in-out;
+
+}
+
+@keyframes sprout-left {
+    0% {
+        font-size: 5px;
+        transform: rotate(90deg);
+    }
+    50% {
+        transform: translate(-10%, -200%) rotate(70deg);
+    }
+    100% {
+        font-size: 40px;
+        transform: translate(-100%, -200%) rotate(-15deg);
+    }
+}
+@keyframes sprout-right {
+    0% {
+        font-size: 5px;
+        transform: rotate(270deg);
+    }
+    50% {
+        transform: translate(10%, -200%) rotate(290deg);
+    }
+    100% {
+        font-size: 40px;
+        transform: translate(100%, -200%) rotate(375deg);
+    }
+}
