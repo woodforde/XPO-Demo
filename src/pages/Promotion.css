@@ -1,5 +1,6 @@
 body {
     background-color: #482683;
+    overflow: hidden;
 }
 
 #promotion {
@@ -135,7 +136,6 @@ body {
     left: 0;
     height: 100vh;
     width: 100vw;
-    z-index: 1;
 }
 
 .backgroundImage {
@@ -147,22 +147,24 @@ body {
 
 .backgroundImage:nth-child(1) {
     height: 720px;
-    z-index: 6;
+    z-index: 2;
 }
 .backgroundImage:nth-child(2) {
     height: 560px;
     transform: translate(-68%, -40%) rotate(-15deg);
-    z-index: 5;
+    z-index: 1;
 }
 .backgroundImage:nth-child(3) {
     height: 560px;
     transform: translate(-32%, -45%) rotate(20deg);
-    z-index: 5;
+    z-index: 1;
 }
 
 .promotionTitle {
+    position: absolute;
     font-size: 60px;
-    margin-top: 40px;
+    top: 40px;
     letter-spacing: 0.05em;
-    z-index: 10;
+    z-index: 100;
+    z-index: 4;
 }

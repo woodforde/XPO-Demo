@@ -79,8 +79,8 @@ function Promotion() {
                 src="https://www.cadbury.com.au/media/wysiwyg/MOND_9300617066125-1.png"
                 alt=""
             />
-            <h1 className="promotionTitle">Cadbury Bake a Bonus</h1>
         </section>
+        <h1 className="promotionTitle">Cadbury Bake a Bonus</h1>
 
         <footer id="promotionFooter">
             <ul className="promotionLinks">

@@ -17,6 +17,7 @@ nav {
 
 .navLogo__container {
     height: 100%;
+    cursor: pointer;
 }
 .navLogo__container > img {
     height: 100%;

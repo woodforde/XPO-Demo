@@ -3,6 +3,7 @@ import './WorkPage.css';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import ImagePreview from '../components/ImagePreview';
+import { useNavigate } from 'react-router-dom';
 
 function WorkPage() {
 
@@ -48,6 +49,8 @@ function WorkPage() {
     const [showNavBubble, setShowNavBubble] = useState(false);
     const [expandNavBubble, setExpandNavBubble] = useState(false);
 
+    const navigate = useNavigate();
+
     const controlNav = () => {
         if (window.scrollY > 100) {
             setShowNavBubble(true);
@@ -81,7 +84,10 @@ function WorkPage() {
             )}
         </div>
         <nav>
-            <div className="navLogo__container">
+            <div 
+                className="navLogo__container"
+                onClick={() => navigate("/")}
+            >
                 <img
                     src="https://www.xpobrands.com.au/wp-content/themes/xpo-public/images/XPO-Logo.svg"
                     alt=""
