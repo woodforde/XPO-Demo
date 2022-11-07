@@ -82,7 +82,7 @@ function Promotion() {
             <h1 className="promotionTitle">Cadbury Bake a Bonus</h1>
         </section>
 
-        <footer>
+        <footer id="promotionFooter">
             <ul className="promotionLinks">
                 <li className="promotionLink">
                     <a className="promotionLink__anchor">TERMS AND CONDITIONS</a>
