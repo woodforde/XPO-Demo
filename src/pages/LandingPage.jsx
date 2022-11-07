@@ -16,12 +16,12 @@ function LandingPage() {
         ><i class={`fa-solid fa-xmark ${menuIsOpen ? "menuButton--cross" : "menuButton--cross-hidden"}`}></i></div>
         <h1
           className={`menuText ${menuIsOpen && "menuText--open"}`}
-          onClick={() => navigate("/timetable")}  
-        >Timetable</h1>
+          onClick={() => navigate("/promotion")}  
+        >Promotion</h1>
         <h1
           className={`menuText ${menuIsOpen && "menuText--open"}`}
-          onClick={() => navigate("/image-scroll")}  
-        >Image Scroll</h1>
+          onClick={() => navigate("/work-page")}  
+        >Clone Example</h1>
       </div>
     </div>
   )
