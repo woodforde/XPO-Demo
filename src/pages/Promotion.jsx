@@ -80,7 +80,11 @@ function Promotion() {
                 alt=""
             />
         </section>
-        <h1 className="promotionTitle">Cadbury Bake a Bonus</h1>
+
+        <div className="promotionTitle__container">
+                    
+            <h1 className="promotionTitle">Cadbury Bake-a-Bonus</h1>
+        </div>
 
         <footer id="promotionFooter">
             <ul className="promotionLinks">

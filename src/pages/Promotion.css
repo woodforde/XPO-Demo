@@ -28,7 +28,7 @@ body {
     justify-content: space-between;
     width: 600px;
     height: 80px;
-    box-shadow: 0px 0px 12px 0px rgba(255,255,255,0.32);
+    box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.32);
 }
 .promotionCode__containerSuccess {
     width: 80px;
@@ -160,11 +160,20 @@ body {
     z-index: 1;
 }
 
-.promotionTitle {
+.promotionTitle__container {
     position: absolute;
-    font-size: 60px;
     top: 40px;
-    letter-spacing: 0.05em;
     z-index: 100;
-    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #482683;
+    border: solid 2px whitesmoke;
+    border-radius: 48px;
+    padding: 8px 24px;
+    box-shadow: 0px 0px 20px 0px rgba(0,0,0,0.52);
+}
+.promotionTitle {
+    letter-spacing: 0.05em;
+    font-size: 60px;
 }

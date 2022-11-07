@@ -1,3 +1,7 @@
+body {
+    overflow-y: scroll;
+}
+
 #workPage {
     overflow-x: hidden;
     background-color: #22577a;
